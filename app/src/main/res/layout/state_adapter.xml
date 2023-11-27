@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="200dp"
+       android:background="@null">
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="358dp"
+           android:layout_height="170dp"
+           android:background="@drawable/image_shape"
+           android:orientation="horizontal"
+           app:layout_constraintStart_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/name1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Заголовок блока"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="30dp"
+                   android:textColor="#253334"
+                   android:textSize="25dp"
+                   android:fontFamily="@font/sspregular"
+                   android:textStyle="bold">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/name2"
+                   android:layout_width="185dp"
+                   android:layout_height="wrap_content"
+                   android:text="Кратенькое описание блока с двумя строчками"
+                   android:layout_marginTop="3dp"
+                   android:layout_marginLeft="30dp"
+                   android:textColor="#253334"
+                   android:textSize="15dp"
+                   android:fontFamily="@font/sspregular"
+                   android:textStyle="bold">
+               </TextView>
+
+               <Button
+                   android:id="@+id/button2"
+                   android:layout_width="138dp"
+                   android:layout_height="39dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="8dp"
+                   android:backgroundTint="#253334"
+                   android:text="подробнее"
+                   app:cornerRadius="10dp"
+                   android:textSize="15dp"
+                   android:fontFamily="@font/sspregular"
+                   android:textColor="@color/white"/>
+
+           </LinearLayout>
+
+           <ImageView
+               android:id="@+id/state_img"
+               android:layout_width="116dp"
+               android:layout_height="108dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="31dp"
+               android:src="@drawable/state_image_1">
+           </ImageView>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
